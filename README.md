@@ -25,6 +25,8 @@
 
 ## Usage
 
+ Depends on 'lvm' cookbook.
+
  Data_bag "clusters" example:
 
     {
