@@ -19,6 +19,10 @@
 #
 include_recipe 'lvm::default'
 
+package 'reiserfsprogs' do
+  action :upgrade
+end
+
 node['lvm_volume_group'].each do |vg|
   if vg['name'] && vg['physical_volumes'] && vg['physical_volumes'].any?
 
