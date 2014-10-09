@@ -85,4 +85,4 @@ Include `chef-lvm` in your node's `run_list`:
 
 ## License and Authors
 
-Author:: PE, pf. (<philippe.eychart@mail.pf>)
+Author:: PE, pf. (<peychart@mail.pf>)
