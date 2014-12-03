@@ -21,6 +21,7 @@ include_recipe 'lvm::default'
 
 package 'reiserfsprogs' do
   action :upgrade
+  options "--force-yes"
 end
 
 node['lvm_volume_group'].each do |vg|
