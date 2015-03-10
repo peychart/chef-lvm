@@ -6,5 +6,5 @@ description      'Installs/Configures chef-lvm'
 long_description 'Installs/Configures chef-lvm'
 version          '0.1.0'
 
-depends          'lvm,git: https://github.com/peychart/lvm.git'
+depends          'lvm'
 
