@@ -38,6 +38,12 @@ node['lvm_volume_group'].each do |vg|
           stripes      lv['stripes'] if lv['stripes']
           mirrors      lv['mirrors'] if lv['mirrors']
         end
+
+        directory lv['mount_point']['location'] do
+          owner        lv['mount_point']['owner'] if lv['mount_point']['owner']
+          group        lv['mount_point']['group'] if lv['mount_point']['group']
+          mode         lv['mount_point']['mode'] if lv['mount_point']['mode']
+        end if lv['mount_point'] && (lv['mount_point']['owner'] || lv['mount_point']['group'] || lv['mount_point']['mode'])
       end if vg['logical_volume']
 
     end
